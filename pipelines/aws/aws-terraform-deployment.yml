@@ -20,7 +20,7 @@ stages:
       inputs:
         provider: 'aws'
         command: 'init'
-        workingDirectory: '$(System.DefaultWorkingDirectory)/aws'
+        workingDirectoryaklsjdf;olkasjdfoi;ljkasd;foij: '$(System.DefaultWorkingDirectory)/aws'
         backendServiceAWS: 'aws-eu-west-1'
         backendAWSBucketName: 'terraform'
         backendAWSKey: 'terraform.tfstate'
