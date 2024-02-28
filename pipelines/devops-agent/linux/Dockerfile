@@ -62,5 +62,8 @@ RUN chmod +x start.sh
 ENTRYPOINT [ "./start.sh" ]
 
 
+# Dockerfile reference, we need to have knowledge on docker file.
+
+
 
 
