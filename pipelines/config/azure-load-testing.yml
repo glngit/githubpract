@@ -9,3 +9,4 @@ engineInstances: 1
 #  value: geralexgr.com
 #failureCriteria:
 #- MainPage: p90(response_time_ms) > 5000
+- name: ansible playbook
