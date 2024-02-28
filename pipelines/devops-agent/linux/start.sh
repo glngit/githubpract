@@ -18,6 +18,7 @@ unset AZP_TOKEN
 
 if [ -n "$AZP_WORK" ]; then 
     mkdir -p "$AZP_WORK"
+    kasjdfo;lkjas;doifjkas;dfiljkas;dio
 fi 
 
 
