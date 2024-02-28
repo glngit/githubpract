@@ -31,3 +31,7 @@ stages:
         command: 'apply'
         workingDirectory: '$(System.DefaultWorkingDirectory)/aws'
         environmentServiceNameAWS: 'aws-eu-west-1'
+
+        eAWS: 'aws-eu-west-1'
+        backendAWSBucketName: 'terraform'
+        backendAWSKey: 'terraform.tfstate'
