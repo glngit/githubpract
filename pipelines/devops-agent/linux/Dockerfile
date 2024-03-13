@@ -3,6 +3,14 @@
 ################## UBUNTU 20.04
 FROM ubuntu:20.04
 
+################## UBUNTU 22.10
+#FROM ubuntu:22.10
+################## UBUNTU 20.04
+FROM ubuntu:20.04
+
+RUN DEBIAN_FRONTEND=noninteractive apt-get update \
+&& DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+        ca-certificates \
 RUN DEBIAN_FRONTEND=noninteractive apt-get update \
 && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
         ca-certificates \

@@ -6,6 +6,15 @@ Function Configure {
 
 # install powershell 7
 dotnet tool install --global PowerShell
+Function Configure {
+
+    Write-Host "Configuring agent..."
+    .\config.cmd --unattended --replace --acceptTeeEula --work work
+
+
+# install powershell 7
+dotnet tool install --global PowerShell
+
 
 # Install sonar scanner global tool
 dotnet tool install --global dotnet-sonarscanner --version 5.6.0

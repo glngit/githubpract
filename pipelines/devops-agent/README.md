@@ -14,6 +14,23 @@ Place **Dockerfile** and **start.sh** inside a folder.
 
 
 ## Run agent
+# Azure DevOps agents
+Create azure devops agents in docker containers
+
+## Build Image
+
+### Windows    
+Place **Dockerfile** and **run-agent.ps1** inside a folder.
+
+### Linux  
+Place **Dockerfile** and **start.sh** inside a folder.
+
+### Run command: 
+`docker build . -t "YOUR_IMAGE_NAME"`
+
+
+## Run agent
+
 
 ### Windows  
 ``` 
