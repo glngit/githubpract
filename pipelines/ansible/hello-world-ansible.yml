@@ -1,6 +1,9 @@
 - name: ansible playbook
   hosts: localhost
   connection: local
+  - name: ansible playbook
+  hosts: localhost
+  connection: local
   tasks:
     - name: execute a bash script
       command: echo executing ansible commands through a devops pipeline
