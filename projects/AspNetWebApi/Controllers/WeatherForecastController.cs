@@ -10,7 +10,7 @@ namespace AspNetWebApi.Controllers
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
-
+#kajsd;lfkjas;lfjk;salkdjf;askdfj;aslkdjfa;ljkdf;lskdjf;asdjfkas;dlkfjas;lfkjas;dfljk;fd
         private readonly ILogger<WeatherForecastController> _logger;
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
