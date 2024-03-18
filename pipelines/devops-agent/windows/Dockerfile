@@ -39,7 +39,7 @@ WORKDIR C:\agent
 
 COPY ./run-agent.ps1 .
 
-
+WORKDIR C:\agent
 CMD .\run-agent.ps1
 
 ENV DOTNET_CLI_TELEMETRY_OPTOUT=true `
