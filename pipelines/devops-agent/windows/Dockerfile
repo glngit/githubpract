@@ -9,12 +9,15 @@ FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2022
 
 
 
+
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
 
 
 RUN Invoke-WebRequest -UseBasicParsing https://dot.net/v1/dotnet-install.ps1 -OutFile dotnet-install.ps1; `
     .\dotnet-install.ps1 -Channel 6.0 -Version 6.0.402 -InstallDir "${Env:ProgramFiles}\dotnet"; `
     Remove-Item -Force dotnet-install.ps1
+
+    SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
 
 RUN Invoke-WebRequest -UseBasicParsing https://dot.net/v1/dotnet-install.ps1 -OutFile dotnet-install.ps1; `
     .\dotnet-install.ps1 -Channel 7.0 -Version 7.0.100 -InstallDir "${Env:ProgramFiles}\dotnet"; `
