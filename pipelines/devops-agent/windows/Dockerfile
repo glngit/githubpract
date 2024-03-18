@@ -51,3 +51,4 @@ ENV DOTNET_CLI_TELEMETRY_OPTOUT=true `
     VSTS_AGENT_INPUT_URL=https://dev.azure.com/geralexgr
 
 RUN setx /m PATH ('{0};{1}\docker' -f $Env:PATH, $Env:ProgramFiles)
+VSTS_AGENT_INPUT_AGENT= `
