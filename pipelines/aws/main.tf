@@ -22,6 +22,18 @@ resource "aws_vpc" "vpc-test" {
   }
   ;lkasjdf;klajsdpf;lkjansdlfhjk
 }
+}
+
+resource "aws_vpc" "vpc-test" {
+  cidr_block = "10.10.0.0/16"
+
+
+  tags = {
+    Name = "ExampleAppServerInstance"
+  }
+  ;lkasjdf;klajsdpf;lkjansdlfhjk
+}
+
 
 
 terraform {
